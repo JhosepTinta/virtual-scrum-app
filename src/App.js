@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import MyCardA from './Components/MyCardA';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <MyCardA 
+        titulo="Manifiesto agil2"
+        numero="1"
+        if={false}
+        />
+        <h1>hola</h1>
+        <MyCardA
+        titulo="Origen y Pilares Fundamentales"
+        numero="2"
+        if={true}
+        />
+        <h1>hola</h1>
+        <MyCardA
+        titulo="Roles de Scrum"
+        numero="3"
+        if={true}
+        />
     </div>
   );
 }
